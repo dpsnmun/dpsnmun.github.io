@@ -177,7 +177,13 @@ body {
 .com-picture {
 	border-radius: 0.25em;
 	width: 100%;
+	/*-webkit-filter: sepia(1) grayscale(0.5);*/
 }
+/*
+.com-picture:hover {
+	-webkit-filter: none;
+}
+*/
 .agenda {
 	color: #2ECC71;
 	font-family: 'Open Sans',sans-serif;
