@@ -114,7 +114,7 @@ body {
 	font-size: 10em;
 	color: #FFFFFF;
 	margin: 0 auto;
-	margin-top: 1em;
+	margin-top: 0.75em;
 }
 .subtitle {
 	font-family: 'Droid Serif', 'varela',sans-serif;
@@ -123,6 +123,11 @@ body {
 	font-weight: 100;
 	text-align: center;
 	color: #2ECC71;
+}
+.date {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+	color: #FFFFFF;
 }
 .con {
 	font-family: 'varela',sans-serif;
@@ -157,7 +162,10 @@ body {
 	font-weight: 100;
 	text-align: center;
 	padding: 1em;
-	height: 11em;
+	padding-bottom: 1.5em;
+}
+.sec div {
+	height: 12em;
 }
 #empty {
 	border: 0;
@@ -172,12 +180,8 @@ body {
 	font-size: 1.5em;
 
 }
-.comm {
-	min-height: 22em;
-	font-size: 0.2em;	
-}
 .logo {
-	height: 10em;
+	height: 9em;
 	width: auto;
 }
 .eb {
@@ -283,13 +287,18 @@ body {
 		font-size: 1.25em;
 	}
 	.subheading {
-		font-size: 2em;
+		font-size: 2.5em;
 		padding-top: 1em;
 	}
 	.com-title {
 		font-size: 1.75em;
 	}
+	/*
 	.com div {
+		height: 11em;
+	}
+	*/
+	.sec div {
 		height: 11em;
 	}
 	.logo {
@@ -301,10 +310,6 @@ body {
 	}
 	.snail {
 		font-size: 0.75em;
-	}
-	.comm {
-		height: auto;
-		min-height: 25em;
 	}
 	#empty {
 		display: none;
