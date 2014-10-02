@@ -58,7 +58,6 @@ a.symbol:before {
 	transition:all 0.25s;
 }
 body {
-	background-position: center;
 	background-color: #333333;
 	max-width: 100%;
 	overflow-x: hidden;
