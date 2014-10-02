@@ -32,7 +32,7 @@
 								</DIV>
 								<DIV class="container">
 									<DIV class="row">
-										<DIV class="column full top">
+										<DIV class="column full center">
 											<P class="title fadeInDown wow">
 												Contact
 											</P>
@@ -58,16 +58,16 @@
 									</DIV>
 
 									<DIV class="row">
-										<DIV class="column full snail">
-											<P class="wow fadeInDown alternate">
+										<DIV class="column full postal">
+											<P class="wow fadeInDown">
 												You can also reach us at:
 											</P>
-											<A href="http://goo.gl/6ytJmB" target="_blank" class="wow fadeInUp add">
+											<A href="http://goo.gl/6ytJmB" target="_blank" class="wow fadeInUp address">
 												Delhi Public School Noida, Sector 30,<BR /> Noida, Uttar Pradesh 201303 
 											</A>
 											<BR />
-											<A class="wow fadeInUp add" >Phone # </A>
-											<A class="wow fadeInUp add" href="tel:+911204509100">
+											<A class="wow fadeInUp address" >Phone # </A>
+											<A class="wow fadeInUp address" href="tel:+911204509100">
 												0120 450 9100
 											</A>
 										</DIV>
@@ -75,11 +75,11 @@
 
 									<!--
 									<DIV class="row">
-										<DIV class="column full snail">
-											<P class="wow fadeInDown alternate">
+										<DIV class="column full postal">
+											<P class="wow fadeInDown">
 												or call us up at:
 											</P>
-											<P class="wow fadeInUp add">
+											<P class="wow fadeInUp address">
 												0120 450 9100
 											</P>
 										</DIV>
@@ -112,7 +112,7 @@
 											menu = "small";
 										}
 									}
-									window.addEventListener("orientationchange", function() {
+									window.addressEventListener("orientationchange", function() {
 										if(window.innerHeight < window.innerWidth){	
 											$('.link').css('opacity','1');
 											$('.link').css('display','inline-block');

@@ -62,6 +62,9 @@ body {
 	max-width: 100%;
 	overflow-x: hidden;
 }
+.center {
+	text-align: center;
+}
 .nav {
 	position: fixed;
 	background: rgba(51, 51, 51, 0.85);
@@ -96,17 +99,6 @@ body {
 	color: #2ECC71;
 	border-bottom-color: #2ECC71;
 }
-.top {
-	text-align: center;
-}
-#gmap_canvas {
-	width: 100%;
-	height: 20em;
-	margin-bottom: 5em;
-}
-#map_container {
-	margin-top: 2em;
-}
 .title {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
@@ -128,10 +120,14 @@ body {
 	font-size: 2em;
 	color: #FFFFFF;
 }
+.logo {
+	height: 9em;
+	width: auto;
+}
 .con {
 	font-family: 'varela',sans-serif;
 }
-.register {
+.button {
 	display: inline-block;
 	font-family: 'Open Sans',sans-serif;
 	font-size: 1.25em;
@@ -144,16 +140,22 @@ body {
 	margin-bottom: 1em;
 	text-decoration: none;
 }
-.register:hover {
+.button:hover {
 	background-color: #2ECC71;
 	color: #333333;
 }
-.com div {
+.subheading {
+	font-family: 'Droid Serif', 'Open Sans',sans-serif;
+	font-size: 3em;
+	text-align: center;
+	color: #2ECC71;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.committee div {
 	background: #333333;
 	color: #FFFFFF;
 	border: solid 1px #2ECC71;
-/*	border-bottom: solid 5px #2ECC71;
-	Check this later*/
 	border-radius: 0.25em;
 	font-family: 'Open Sans',sans-serif;
 	font-size: 1.25em;
@@ -163,17 +165,11 @@ body {
 	padding: 1em;
 	padding-bottom: 1.5em;
 }
-.sec div {
-	height: 12em;
-}
-#empty {
-	border: 0;
-}
-.com-title {
+.committee-name {
 	font-family: 'Droid Serif', 'Open Sans',sans-serif;
 	font-size: 1.75em;
 }
-.com-picture {
+.committee-picture {
 	border-radius: 0.25em;
 	width: 100%;
 	/*-webkit-filter: sepia(1) grayscale(0.5);*/
@@ -189,11 +185,21 @@ body {
 	font-size: 1.5em;
 
 }
-.logo {
-	height: 9em;
-	width: auto;
+.sec div {
+	height: 12em;
+	background: #333333;
+	color: #FFFFFF;
+	border: solid 1px #2ECC71;
+	border-radius: 0.25em;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 1.25em;
+	margin-bottom: 5%;
+	font-weight: 100;
+	text-align: center;
+	padding: 1em;
+	padding-bottom: 1.5em;
 }
-.eb {
+.thumbnail {
 	display: block;
 	border-radius: 100%;
 	height: 4.25em;
@@ -208,43 +214,34 @@ body {
 	margin-top: 1em;
 	margin-bottom: 1em;
 	text-decoration: none;
-
 }
 .names:hover{
 	color: #2ECC71;
-}
-.subheading {
-	font-family: 'Droid Serif', 'Open Sans',sans-serif;
-	font-size: 3em;
-	text-align: center;
-	color: #2ECC71;
-	margin-top: 2em;
-	margin-bottom: 2em;
-}
-.alternate {
-	font-family: 'Open Sans',sans-serif;
-	font-size: 2em;
-	color: #2ECC71;
-	text-align: center;
-}
-.snail {
-	text-align: center;
-}
-.snail a {
-	font-size: 1.5em;
-}
-.add {
-	color: #FFFFFF;
-	font-family: 'Open Sans',sans-serif;
-	font-size: 2em;
-	text-decoration: none;
-	font-weight: 100;
 }
 .post {
 	color: #2ECC71;
 	font-size: 0.65em;
 	text-align: center;
 	text-transform: uppercase;
+}
+.postal {
+	text-align: center;
+}
+.postal a {
+	font-size: 1.5em;
+}
+.postal p {
+	font-family: 'Open Sans',sans-serif;
+	font-size: 2em;
+	color: #2ECC71;
+	text-align: center;
+}
+.address {
+	color: #FFFFFF;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 2em;
+	text-decoration: none;
+	font-weight: 100;
 }
 .fb:hover {
 	color: #3B5998;
@@ -258,6 +255,14 @@ body {
 .social a {
 	color: #FFFFFF;
 	text-decoration: none;
+}
+#gmap_canvas {
+	width: 100%;
+	height: 20em;
+	margin-bottom: 5em;
+}
+#map_container {
+	margin-top: 2em;
 }
 @media screen and (orientation:portrait) {
 	.column.full,
@@ -274,17 +279,16 @@ body {
 		opacity: 1;
 		display: inline-block;
 	}
+	.nav {
+		max-height: 3.5em;
+	}
 	.nav a {
 		opacity: 0;
 		display: none;
 	}
-
 	.nav a:hover {
 		background-color: #2ECC71;
 		color: #333333;
-	}
-	.nav {
-		max-height: 3.5em;
 	}
 	.title {
 		font-size: 6em;
@@ -292,42 +296,29 @@ body {
 	.subtitle {
 		font-size: 2em;
 	}
-	.register {
+	.logo {
+		height: 10em;
+		width: auto;
+	}
+	.button {
 		font-size: 1.25em;
 	}
 	.subheading {
 		font-size: 2.5em;
 		padding-top: 1em;
 	}
-	.com-title {
+	.committee-title {
 		font-size: 1.75em;
 	}
-	/*
-	.com div {
-		height: 11em;
-	}
-	*/
 	.sec div {
 		height: 11em;
-	}
-	.logo {
-		height: 10em;
-		width: auto;
 	}
 	.social a {
 		font-size: 0.75em;
 	}
-	.snail {
+	.postal {
 		font-size: 0.75em;
 	}
-	#empty {
-		display: none;
-	}
-	/*
-	#gmap_canvas {
-		height: 15em;
-	}
-	*/
 }
 @media screen and (orientation:landscape) {
 	.nav a {

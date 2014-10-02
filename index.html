@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta content="initial-scale=1" name="viewport">
+	<meta content="initial-scale=1" name="viewport">
 
-    <title>DPSN MUN</title>
+	<title>DPSN MUN</title>
 
-    <!-- Adding favicon-->
-    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
-    
-    <!-- Embedding Google Fonts -->
-    <link href=
-    'http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel=
-    'stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel=
-    'stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel=
-    'stylesheet' type='text/css'>
+	<!-- Adding favicon-->
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon">
+	
+	<!-- Embedding Google Fonts -->
+	<link href=
+	'http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel=
+	'stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel=
+	'stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel=
+	'stylesheet' type='text/css'>
 
-    <!-- Embedding stylesheets -->
-    <link href="stylesheets/normalize.css" rel="stylesheet">
-    <link href="stylesheets/style.css" rel="stylesheet">
-    <link href="stylesheets/override.css" rel="stylesheet">
-    <link href="stylesheets/animate.css" rel="stylesheet">
+	<!-- Embedding stylesheets -->
+	<link href="stylesheets/normalize.css" rel="stylesheet">
+	<link href="stylesheets/style.css" rel="stylesheet">
+	<link href="stylesheets/override.css" rel="stylesheet">
+	<link href="stylesheets/animate.css" rel="stylesheet">
 
-    <!-- Embedding scripts -->
-    <script src="scripts/wow.min.js"></script>
-    <script src="scripts/header.js"></script>
-    <script src="scripts/jquery-2.1.0.min.js"></script>
+	<!-- Embedding scripts -->
+	<script src="scripts/wow.min.js"></script>
+	<script src="scripts/header.js"></script>
+	<script src="scripts/jquery-2.1.0.min.js"></script>
 </head>
 
 
 <body>
-    <div class="nav" id="bar">
-        <img align="left" class="menu" onclick="show()" src="images/icon.png">
-        <a class="link wow fadeInDown" href="#">Home</a>
-        <a class="link wow fadeInDown" href="details.html">Details</a>
-        <a class="link wow fadeInDown">Resources</a>
-        <a class="link wow fadeInDown" href="contact.html">Contact</a>
-    </div>
+	<div class="nav" id="bar">
+		<img align="left" class="menu" onclick="show()" src="images/icon.png">
+		<a class="link wow fadeInDown" href="#">Home</a>
+		<a class="link wow fadeInDown" href="details.html">Details</a>
+		<a class="link wow fadeInDown">Resources</a>
+		<a class="link wow fadeInDown" href="contact.html">Contact</a>
+	</div>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="column full top">
-                <p class="title fadeInDown wow">DPSN MUN</p>
+	<div class="container">
+		<div class="row">
+			<div class="column full center">
+				<p class="title fadeInDown wow">DPSN MUN</p>
 
-                <p class="subtitle fadeInUp wow">Commitment Redefined.</p>
+				<p class="subtitle fadeInUp wow">Commitment Redefined.</p>
 
-                <p class="date fadeInUp wow">2-3 December, 2014</p>
+				<p class="date fadeInUp wow">2-3 December, 2014</p>
 
-                <img class="logo wow fadeInUp" src="images/Logo.png">
-                <!--
-                    <BR />
-                    <A class="register wow fadeIn" href="#">
-                        Explore
-                    </A>
-                -->
-            </div>
-        </div>
-    </div>
-    <script>
-        new WOW().init();
+				<img class="logo wow fadeInUp" src="images/Logo.png">
+				<!--
+					<BR />
+					<A class="button wow fadeIn" href="#">
+						Explore
+					</A>
+				-->
+			</div>
+		</div>
+	</div>
+	<script>
+		new WOW().init();
 
-                var menu = "small";
-                function show() {
-                    if (menu == "small") {
-                        $('.nav').css('min-height','17em');
-                        $('.link').css('opacity','1');
-                        $('.link').css('display','inline-block');
-                        menu = "big";
-                    } else {
-                        $('.link').css('opacity','0').delay(250);
-                        $('.link').css('display','none');
-                        $('.nav').css('min-height','3.5em');
-                        menu = "small";
-                    }
-                }
-                window.addEventListener("orientationchange", function() {
-                    if(window.innerHeight < window.innerWidth){ 
-                        $('.link').css('opacity','1');
-                        $('.link').css('display','inline-block');
-                    }
-                }, false);
+				var menu = "small";
+				function show() {
+					if (menu == "small") {
+						$('.nav').css('min-height','17em');
+						$('.link').css('opacity','1');
+						$('.link').css('display','inline-block');
+						menu = "big";
+					} else {
+						$('.link').css('opacity','0').delay(250);
+						$('.link').css('display','none');
+						$('.nav').css('min-height','3.5em');
+						menu = "small";
+					}
+				}
+				window.addEventListener("orientationchange", function() {
+					if(window.innerHeight < window.innerWidth){ 
+						$('.link').css('opacity','1');
+						$('.link').css('display','inline-block');
+					}
+				}, false);
 
-    </script>
+	</script>
 </body>
 </html>
