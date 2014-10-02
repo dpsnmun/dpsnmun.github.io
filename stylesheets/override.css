@@ -186,7 +186,7 @@ body {
 
 }
 .sec div {
-	height: 12em;
+	height: 13.5em;
 	background: #333333;
 	color: #FFFFFF;
 	border: solid 1px #2ECC71;
@@ -223,6 +223,19 @@ body {
 	font-size: 0.65em;
 	text-align: center;
 	text-transform: uppercase;
+}
+.phone {
+	color: #FFFFFF;
+	font-size: 1em;
+	text-align: center;
+	margin-top: 0em;
+	text-transform: uppercase;
+}
+.phone a {
+	text-decoration: none;
+	margin-top: 0em;
+	font-size: 0.75em;
+	color: #FFFFFF;
 }
 .postal {
 	text-align: center;
@@ -311,7 +324,7 @@ body {
 		font-size: 1.75em;
 	}
 	.sec div {
-		height: 11em;
+		height: 12em;
 	}
 	.social a {
 		font-size: 0.75em;
