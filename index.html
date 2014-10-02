@@ -1,108 +1,88 @@
-<!DOCTYPE HTML>
-<HTML>
-	<HEAD>
-		<META name="viewport" content="initial-scale=1">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="initial-scale=1" name="viewport">
 
-			<TITLE>
-				DPSN MUN
-			</TITLE>
-			<LINK rel="icon" href="images/favicon.ico" type="image/x-icon" />
-			<!-- Embedding Google Fonts -->
-			<LINK href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
-				<LINK href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'> 
-				<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
-					<!-- Embedding stylesheets -->
-					<LINK rel="stylesheet" href="stylesheets/normalize.css">
-						<LINK rel="stylesheet" href="stylesheets/style.css">
-							<LINK rel="stylesheet" href="stylesheets/override.css">
-								<LINK rel="stylesheet" href="stylesheets/animate.css">	
-									<!-- Embedding scripts -->
-									<SCRIPT src="scripts/wow.min.js"></SCRIPT>
-									<SCRIPT src="scripts/header.js"></SCRIPT>
-									<SCRIPT src="scripts/jquery-2.1.0.min.js"></SCRIPT>
-								</HEAD>
-								<!--<BODY style="background-image: url('images/bg.jpg');">-->
-								<BODY>
-									<DIV class="nav" id="bar">
-										<IMG src="images/icon.png" align="left" class="menu" onclick="show()" />
-										<A class="link wow fadeInDown" href="#">Home</A>
-										<A class="link wow fadeInDown" href="details.html">Details</A>
-										<A class="link wow fadeInDown">Resources</A>
-										<A class="link wow fadeInDown" href="contact.html">Contact</A>
-									</DIV>
-									<DIV class="container">
-										<DIV class="row">
-											<DIV class="column full top">
-												<P class="title fadeInDown wow">
-													DPSN MUN
-												</P>
-												<P class="subtitle fadeInUp wow">
-												Commitment Redefined.
-												</P>
-												<P class="date fadeInUp wow">
-													<!--2<SUP>nd</SUP>-3<SUP>rd</SUP> December, 2014
-													Sahil said-->
-													2-3 December, 2014
-												</P>
-												<IMG src="images/Logo.png" class="logo wow fadeInUp"/>
-										<!--
-										<BR />
-										<A class="register wow fadeIn" href="#">
-											Explore
-										</A>
-										-->
-									</DIV>
-								</DIV>
-					<!--
-					<DIV class="row">
-						<DIV class="column two-thirds"></DIV>
-						<DIV class="column one-third"></DIV>
-					</DIV>
+    <title>DPSN MUN</title>
 
-					<DIV class="row">
-						<DIV class="column half"></DIV>
-						<DIV class="column half"></DIV>
-					</DIV>
+    <!-- Adding favicon-->
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    
+    <!-- Embedding Google Fonts -->
+    <link href=
+    'http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel=
+    'stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel=
+    'stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel=
+    'stylesheet' type='text/css'>
 
-					<DIV class="row">
-						<DIV class="column one-third"></DIV>
-						<DIV class="column one-third"></DIV>
-						<DIV class="column one-third"></DIV>
-					</DIV>
+    <!-- Embedding stylesheets -->
+    <link href="stylesheets/normalize.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    <link href="stylesheets/override.css" rel="stylesheet">
+    <link href="stylesheets/animate.css" rel="stylesheet">
 
-					<DIV class="row">
-						<DIV class="column one-fourth"></DIV>
-						<DIV class="column one-fourth"></DIV>
-						<DIV class="column one-fourth"></DIV>
-						<DIV class="column one-fourth"></DIV>
-					</DIV>
-				-->
-			</DIV>
+    <!-- Embedding scripts -->
+    <script src="scripts/wow.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/jquery-2.1.0.min.js"></script>
+</head>
 
-			<SCRIPT>
-				new WOW().init();
 
-				var menu = "small";
-				function show() {
-					if (menu == "small") {
-						$('.nav').css('min-height','17em');
-						$('.link').css('opacity','1');
-						$('.link').css('display','inline-block');
-						menu = "big";
-					} else {
-						$('.link').css('opacity','0').delay(250);
-						$('.link').css('display','none');
-						$('.nav').css('min-height','3.5em');
-						menu = "small";
-					}
-				}
-				window.addEventListener("orientationchange", function() {
-					if(window.innerHeight < window.innerWidth){	
-						$('.link').css('opacity','1');
-						$('.link').css('display','inline-block');
-					}
-				}, false);
+<body>
+    <div class="nav" id="bar">
+        <img align="left" class="menu" onclick="show()" src="images/icon.png">
+        <a class="link wow fadeInDown" href="#">Home</a>
+        <a class="link wow fadeInDown" href="details.html">Details</a>
+        <a class="link wow fadeInDown">Resources</a>
+        <a class="link wow fadeInDown" href="contact.html">Contact</a>
+    </div>
 
-			</SCRIPT>
-		</BODY>
-	</HTML>
+
+    <div class="container">
+        <div class="row">
+            <div class="column full top">
+                <p class="title fadeInDown wow">DPSN MUN</p>
+
+                <p class="subtitle fadeInUp wow">Commitment Redefined.</p>
+
+                <p class="date fadeInUp wow">2-3 December, 2014</p>
+
+                <img class="logo wow fadeInUp" src="images/Logo.png">
+                <!--
+                    <BR />
+                    <A class="register wow fadeIn" href="#">
+                        Explore
+                    </A>
+                -->
+            </div>
+        </div>
+    </div>
+    <script>
+        new WOW().init();
+
+                var menu = "small";
+                function show() {
+                    if (menu == "small") {
+                        $('.nav').css('min-height','17em');
+                        $('.link').css('opacity','1');
+                        $('.link').css('display','inline-block');
+                        menu = "big";
+                    } else {
+                        $('.link').css('opacity','0').delay(250);
+                        $('.link').css('display','none');
+                        $('.nav').css('min-height','3.5em');
+                        menu = "small";
+                    }
+                }
+                window.addEventListener("orientationchange", function() {
+                    if(window.innerHeight < window.innerWidth){ 
+                        $('.link').css('opacity','1');
+                        $('.link').css('display','inline-block');
+                    }
+                }, false);
+
+    </script>
+</body>
+</html>
