@@ -98,12 +98,6 @@ function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(28.57
 											menu = "small";
 										}
 									}
-									window.addressEventListener("orientationchange", function() {
-										if(window.innerHeight < window.innerWidth){ 
-											$('.link').css('opacity','1');
-											$('.link').css('display','inline-block');
-										}
-									}, false);
 
 									$( ".fb" )
 									.mouseover(function() {
@@ -123,6 +117,13 @@ function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(28.57
 										$('.facebook').css('color','#2ECC71');
 
 									});
+
+									window.addEventListener("orientationchange", function() {
+										if(window.innerHeight < window.innerWidth){ 
+											$('.link').css('opacity','1');
+											$('.link').css('display','inline-block');
+										}
+									}, false);
 	</script>
 </body>
 </html>
