@@ -355,6 +355,12 @@ ol li a:hover {
 		font-size: 2.5em;
 		padding-top: 1em;
 	}
+	.big {
+		width: 50%;
+		margin-left: 25%;
+		margin-bottom: 1em;
+		height: auto;
+	}
 	.committee-title {
 		font-size: 1.75em;
 	}
