@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="initial-scale=1" name="viewport">
+
+	<title>Resources | DPSN MUN</title>
+	<!-- Adding favicon-->
+	<link href="images/favicon.ico" rel="icon" type="image/x-icon">
+	<link href="images/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+	<!-- Embedding Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+	<!-- Embedding stylesheets -->
+	<link href="stylesheets/normalize.css" rel="stylesheet">
+	<link href="stylesheets/style.css" rel="stylesheet">
+	<link href="stylesheets/override.css" rel="stylesheet">
+	<link href="stylesheets/animate.css" rel="stylesheet">
+	<!-- Embedding scripts -->
+	<script src="scripts/wow.min.js"></script>
+	<script src="scripts/header.js"></script>
+	<script src="scripts/jquery-2.1.0.min.js"></script>
+</head>
+
+<body>
+	<div class="nav" id="bar">
+		<img align="left" class="menu" onclick="show()" src="images/icon.png"> <a class="link wow fadeInDown" href="index.html">Home</a> <a class=
+		"link wow fadeInDown" href="details.html">Details</a> <a class="link wow fadeInDown" href="#">Resources</a> <a class="link wow fadeInDown" href="contact.html">Contact</a>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="column full center">
+				<p class="title fadeInDown wow">Resources</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column full wow fadeInUp subheading">
+				Registration
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column full wow fadeIn">
+				<ol>
+					<li><a target="_blank" href="#">School Delegation Registration Form</a></li>
+					<li><a target="_blank" href="#">Individual Delegate Registration Form</a></li>
+				</ol>
+			</div>
+		</div>
+
+	</div>
+	<script>
+								new WOW().init();
+
+									var menu = "small";
+									function show() {
+										if (menu == "small") {
+											$('.nav').css('min-height','17em');
+											$('.link').css('opacity','1');
+											$('.link').css('display','inline-block');
+											menu = "big";
+										} else {
+											$('.link').css('opacity','0').delay(250);
+											$('.link').css('display','none');
+											$('.nav').css('min-height','3.5em');
+											menu = "small";
+										}
+									}
+
+									window.addEventListener("orientationchange", function() {
+										if(window.innerHeight < window.innerWidth){ 
+											$('.link').css('opacity','1');
+											$('.link').css('display','inline-block');
+										}
+									}, false);
+	</script>
+</body>
+</html>
