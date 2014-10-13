@@ -13,7 +13,44 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-style: normal;
+	src: url('fonts/OpenSans-Light.ttf');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-style: italic;
+	src: url('fonts/OpenSans-LightItalic.ttf');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: normal;
+	src: url('fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+	font-family: 'Droid Serif';
+	font-weight: 400;
+	src: url('fonts/DroidSerif.ttf');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 100;
+	src: url('fonts/Roboto-Thin.ttf');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 300;
+	src: url('fonts/Roboto-Light.ttf');
+}
+@font-face {
+	font-family: 'Roboto';
+	font-weight: 400;
+	src: url('fonts/Roboto-Regular.ttf');
+}
 .symbol, a.symbol:before {
 	font-family: 'Icons';
 	-webkit-text-rendering: optimizeLegibility;
