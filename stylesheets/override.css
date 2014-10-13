@@ -121,8 +121,14 @@ body {
 	color: #FFFFFF;
 }
 .logo {
-	height: 9em;
+	height: 13em;
 	width: auto;
+}
+.collab {
+	font-family: 'Droid Serif',sans-serif;
+	color: #FFFFFF;
+	font-size: 1em;
+
 }
 .con {
 	font-family: 'varela',sans-serif;
