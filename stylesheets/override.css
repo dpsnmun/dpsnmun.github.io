@@ -404,6 +404,9 @@ ol li a:hover {
 		margin-bottom: 1em;
 		height: auto;
 	}
+	.small {
+		font-size: 4em;
+	}
 	.committee-title {
 		font-size: 1.75em;
 	}
