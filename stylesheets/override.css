@@ -406,8 +406,7 @@ ol li a:hover {
 	}
 	.small {
 		font-size: 4em;
-		margin-top: 10em;
-		position: relative;
+		padding-top: 2em;
 	}
 	.committee-title {
 		font-size: 1.75em;
