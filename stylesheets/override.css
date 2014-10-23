@@ -132,6 +132,9 @@ body {
 	width: 5em;
 	border-bottom: solid 3px rgba(51, 51, 51, 0);
 }
+.nav a:nth-child(2) {
+	margin-left: 0;
+}
 .nav a:hover {
 	color: #2ECC71;
 	border-bottom-color: #2ECC71;
