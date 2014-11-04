@@ -269,6 +269,7 @@ body {
 #blank {
 	height: 11em;
 	border-color: transparent;
+	background-color: transparent;
 }
 .thumbnail {
 	display: block;
