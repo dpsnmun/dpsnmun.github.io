@@ -198,6 +198,14 @@ body {
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
+.eb-title {
+	font-family: 'Open Sans',sans-serif;
+	font-size: 2em;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: 100;
+	margin-bottom: 1em;
+}
 .text {
 	font-family: 'Open Sans',sans-serif;
 	color: #FFFFFF;
@@ -254,6 +262,13 @@ body {
 	text-align: center;
 	padding: 1em;
 	padding-bottom: 1.5em;
+}
+#eb {
+	height: 11em;
+}
+#blank {
+	height: 11em;
+	border-color: transparent;
 }
 .thumbnail {
 	display: block;
@@ -425,6 +440,9 @@ ol li a:hover {
 	}
 	.postal {
 		font-size: 0.75em;
+	}
+	#blank {
+		display: none;
 	}
 }
 @media screen and (orientation:landscape) {
