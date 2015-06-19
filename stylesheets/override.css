@@ -457,8 +457,17 @@ ol li a:hover {
 	.postal {
 		font-size: 0.75em;
 	}
-	#blank {
+	.blank {
 		display: none;
+	}
+
+	.facebook{
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+
+	.facebook:hover{
+		color: #2ECC71;
 	}
 
 	.nothing {
