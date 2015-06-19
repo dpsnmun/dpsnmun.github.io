@@ -445,10 +445,6 @@ ol li a:hover {
 		font-size: 1.75em;
 	}
 
-	.x{
-		margin:0px auto
-	}
-	
 	.sec div {
 		height: 12em;
 	}
@@ -464,12 +460,11 @@ ol li a:hover {
 	#blank {
 		display: none;
 	}
-	#karan {
-	height: 11em;
-	margin-left: 17em;
-}
 
-}
+	.nothing {
+		opacity: 0;
+	}
+
 @media screen and (orientation:landscape) {
 	.nav a {
 		opacity: 1;
