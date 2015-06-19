@@ -281,6 +281,16 @@ body {
 	margin: 0 auto;
 	position: relative;
 }
+
+.rohan {
+	display: block;
+	border-radius: 100%;
+	height: 4.25em;
+	width: 4.25em;
+	border: solid 3px #2ECC71;
+	margin: 0 auto;
+	position: relative;
+}
 .names {
 	color: #FFFFFF;
 	position: relative;
