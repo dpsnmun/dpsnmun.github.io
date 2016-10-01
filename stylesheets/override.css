@@ -474,10 +474,10 @@ ol li a:hover {
 		opacity: 0;
 	}
 .small{
-	font-size:4em;
+	font-size:1em;
 }
 .smaller{
-	font-size:2em;
+	font-size:.75em;
 }
 @media screen and (orientation:landscape) {
 	.nav a {
