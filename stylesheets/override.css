@@ -477,7 +477,7 @@ ol li a:hover {
 	font-size:1.5em;
 }
 .smaller{
-	font-size:.75em;
+	font-size:.6em;
 }
 @media screen and (orientation:landscape) {
 	.nav a {
