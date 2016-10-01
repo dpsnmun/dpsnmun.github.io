@@ -473,7 +473,12 @@ ol li a:hover {
 	.nothing {
 		opacity: 0;
 	}
-
+.small{
+	font-size:4em;
+}
+.smaller{
+	font-size:2em;
+}
 @media screen and (orientation:landscape) {
 	.nav a {
 		opacity: 1;
