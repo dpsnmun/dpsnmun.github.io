@@ -191,7 +191,7 @@ body {
 	color: #333333;
 }
 .subheading {
-	font-family: 'Droid Serif', 'Open Sans',sans-serif;
+	font-family:  'Open Sans',sans-serif;
 	font-size: 3em;
 	text-align: center;
 	color: #2ECC71;
@@ -276,7 +276,7 @@ body {
 	display: block;
 	border-radius: 100%;
 	height: 4.25em;
-	width: auto;
+	width: 4.25em;
 	border: solid 3px #2ECC71;
 	margin: 0 auto;
 	position: relative;
